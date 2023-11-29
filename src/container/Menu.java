@@ -71,6 +71,14 @@ public class Menu {
             }
         });
 
+        JButton makeP = new JButton("Crear un producto");
+        makeP.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                openNewWindowForm();
+            }
+        });
+
         JButton sales = new JButton("Vender");
         sales.addActionListener(new ActionListener() {
             @Override
@@ -79,8 +87,9 @@ public class Menu {
             }
         });
 
-        JPanel gridPanel = new JPanel(new GridLayout(0, 3, 10, 0));
+        JPanel gridPanel = new JPanel(new GridLayout(0, 4, 10, 0));
         gridPanel.add(b1);
+        gridPanel.add(makeP);
         gridPanel.add(deleteButton);
         gridPanel.add(sales);
 
@@ -224,6 +233,10 @@ public class Menu {
 
     private void openNewWindow() {
         new Sales(lista);
+    }
+
+    private void openNewWindowForm() {
+         new ProductForm(lista, this::loadTable);
     }
 
     public void CreateProductsFile(ProductList p){
