@@ -19,7 +19,13 @@ public class ProductList {
     public String printLista() {
         StringBuilder lista = new StringBuilder();
         for (Product item : this.listaProductos) {
-            lista.append(item.getNombre()).append(",\n");
+            lista.append("ID: ").append(item.getId()).append("\n");
+            lista.append("Nombre: ").append(item.getNombre()).append("\n");
+            lista.append("Precio: ").append(item.getPrecio()).append("\n");
+            lista.append("Descripción: ").append(item.getDesc()).append("\n");
+            lista.append("Cantidad: ").append(item.getCantidad()).append("\n");
+            lista.append("Categoría: ").append(item.getCategoria()).append("\n");
+            lista.append("------------------------------\n");
         }
         return lista.toString();
     }

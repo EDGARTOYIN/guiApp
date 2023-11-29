@@ -1,3 +1,21 @@
-Hollow Knight,
-God of War,
-Lol,
+ID: CCZ60CE
+Nombre: Hollow Knight
+Precio: 100.0
+Descripción: Juego sobre insectos
+Cantidad: 20
+Categoría: Aventura
+------------------------------
+ID: 62J86L9
+Nombre: God of War
+Precio: 200.0
+Descripción: Juego sobre guerra
+Cantidad: 14
+Categoría: Accion
+------------------------------
+ID: HGT8O0A
+Nombre: Lol
+Precio: 120.0
+Descripción: Juego sobre farmear
+Cantidad: 20
+Categoría: MOBA
+------------------------------

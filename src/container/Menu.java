@@ -223,7 +223,7 @@ public class Menu {
 
 
     private void openNewWindow() {
-        // new Sales(lista);
+        new Sales(lista);
     }
 
     public void CreateProductsFile(ProductList p){
